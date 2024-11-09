@@ -1,0 +1,42 @@
+.svg-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none; /* Removes default button background */
+    border: none; /* Removes default button border */
+    cursor: pointer;
+}
+
+.svg-btn svg rect{
+  fill: #C0EEAC;
+  text-align: center;
+  transition: all 0.3s; /*this tell the hover rect how to act in cetain second*/
+    margin-left: auto;
+  margin-right: auto;
+}
+
+.svg-btn svg text {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    fill: black; 
+    text-anchor: middle;
+    align-items: center;
+    justify-items: center;
+    transition: font-size 0.3s; /*this also manipulate how the text hover will act in the cetain seconds*/
+}
+
+/*hover effect*/
+.svg-btn:hover rect{
+  fill: #3E4E38;
+    margin: auto;
+  text-align: center;
+  width: 130px; /*rectange size change when hovered*/
+  height: 60px; /*rectange size change when hovered*/
+}
+
+.svg-btn:hover svg text{
+  fill: white;
+  font-size: 23px;
+  justify-items: center;
+}
